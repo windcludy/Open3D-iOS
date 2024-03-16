@@ -34,7 +34,7 @@
       "location" : "https://github.com/windcludy/Open3D-iOS.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c8edd2ffc670eb99825734e62ecfe0a7d9e044b5"
+        "revision" : "e77bca06dbdbcd8de6eb477981643568ee872b8b"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kewlbear/Python-iOS.git",
       "state" : {
-        "revision" : "4f3ca2bc0cff1ef2511555eb6114f9eb12e50412",
-        "version" : "0.1.1-b20230423-090254"
+        "branch" : "kivy-ios",
+        "revision" : "f0efaf32ec2506ed2654051e5ab3dd06d4e78c29"
       }
     },
     {

@@ -18,6 +18,7 @@ let package = Package(
                 "libOpen3D_3rdparty_qhullcpp.a",
                 "libOpen3D_3rdparty_rply.a",
                 "png",
+                "pybind.a",
             ]),
     ],
     dependencies: [
@@ -34,6 +35,7 @@ let package = Package(
         .binaryTarget(name: "libOpen3D_3rdparty_qhullcpp.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240316101146/libOpen3D_3rdparty_qhullcpp.a.xcframework.zip", checksum: "6b594c406cc80ebb3d662a520f7a8b7d2adb50132ec372e14fc96ba0cc438bf2"),
         .binaryTarget(name: "libOpen3D_3rdparty_rply.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240316101146/libOpen3D_3rdparty_rply.a.xcframework.zip", checksum: "4cdecccd350feaf432d6d0df6edd4fc6de05d8b4492268b31ab167fc92d964cb"),
         .binaryTarget(name: "png", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240316101146/png.xcframework.zip", checksum: "190a8bb6a1e3c6fe6eb96f7b7701395ede956d3dc98fd106b3b60c53eea56481"),
+        .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240316101146/pybind.a.xcframework.zip", checksum: "pybind.a.xcframework_CHECKSUM"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -47,6 +49,7 @@ let package = Package(
                 "libOpen3D_3rdparty_qhullcpp.a",
                 "libOpen3D_3rdparty_rply.a",
                 "png",
+                "pybind.a",
                 "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
