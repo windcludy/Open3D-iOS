@@ -366,7 +366,7 @@
 		};
 		4C8B3359261552B800643DC2 /* XCRemoteSwiftPackageReference "Open3D-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kewlbear/Open3D-iOS.git";
+			repositoryURL = "https://github.com/windcludy/Open3D-iOS.git";
 			requirement = {
 				branch = main;
 				kind = branch;
