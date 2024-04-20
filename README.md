@@ -8,7 +8,7 @@ Swift package to use Open3D in iOS apps.
 .package(url: "https://github.com/kewlbear/Open3D-iOS.git", .branch("main"))
 ```
 
-## Usage
+## Usage1
 
 ```
 import Open3DSupport
