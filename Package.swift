@@ -22,6 +22,7 @@ let package = Package(
                 "pybind.a",
                 "TBB",
                 "IrrXML",
+                "Faiss",
             ]),
     ],
     dependencies: [
@@ -42,6 +43,7 @@ let package = Package(
         .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/pybind.a.xcframework.zip", checksum: "e95298a94051a714c2e5fdf4506d1388639711f74d3fb1dd37e7dd9ad7c84e99"),
         .binaryTarget(name: "TBB", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/TBB.xcframework.zip", checksum: "50f6355ff72d9728dc6e12e4fc8c987d189befe42b617ffb714b9dc341976b2d"),
         .binaryTarget(name: "IrrXML", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/0.0.20221129003814/IrrXML.xcframework.zip", checksum: "7e948d42956a3880e61fa0c98d121fa31fde6b729d3074d0516dd04154efbb11"),
+        .binaryTarget(name: "Faiss", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/0.0.20221129003814/Faiss.xcframework.zip", checksum: "a6520e9a7ec211570f39bc9906d53c801a67189745f0ce72fc3634bb5913e4d5"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -59,6 +61,7 @@ let package = Package(
                 "pybind.a",
                 "TBB",
                 "IrrXML",
+                 "Faiss",
                 "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
