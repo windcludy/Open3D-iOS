@@ -21,6 +21,7 @@ let package = Package(
                 "png",
                 "pybind.a",
                 "TBB",
+                "IrrXML",
             ]),
     ],
     dependencies: [
@@ -40,6 +41,7 @@ let package = Package(
         .binaryTarget(name: "png", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/png.xcframework.zip", checksum: "80eeaa2add11690ba9043875ae0874db0d7530b5776ed49845b146fae6088a53"),
         .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/pybind.a.xcframework.zip", checksum: "e95298a94051a714c2e5fdf4506d1388639711f74d3fb1dd37e7dd9ad7c84e99"),
         .binaryTarget(name: "TBB", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/TBB.xcframework.zip", checksum: "50f6355ff72d9728dc6e12e4fc8c987d189befe42b617ffb714b9dc341976b2d"),
+        .binaryTarget(name: "IrrXML", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20221129003814/IrrXML.xcframework.zip", checksum: "7e948d42956a3880e61fa0c98d121fa31fde6b729d3074d0516dd04154efbb11"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -56,6 +58,7 @@ let package = Package(
                 "png",
                 "pybind.a",
                 "TBB",
+                "IrrXML",
                 "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
