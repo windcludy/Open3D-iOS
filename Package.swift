@@ -39,7 +39,7 @@ let package = Package(
         .binaryTarget(name: "libOpen3D_3rdparty_rply.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/libOpen3D_3rdparty_rply.a.xcframework.zip", checksum: "fb57db12d28a64eb2f225e2c601c1508fbadd01e8ce16cf5149077d4ce136927"),
         .binaryTarget(name: "libOpen3D.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/libOpen3D.a.xcframework.zip", checksum: "3b93155cc6ae30d7e7e87c688e9299f88a3404366120b9f6dfed69825959c46c"),
         .binaryTarget(name: "png", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/png.xcframework.zip", checksum: "80eeaa2add11690ba9043875ae0874db0d7530b5776ed49845b146fae6088a53"),
-        .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/pybind.a.xcframework.zip", checksum: "e95298a94051a714c2e5fdf4506d1388639711f74d3fb1dd37e7dd9ad7c84e99"),
+        .binaryTarget(name: "pybind.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/0.0.20220804014308/pybind.a.xcframework.zip", checksum: "56ca201fd48af360cdaed7ba860dd6c668a8eb56ad7d5b297b816c0a30b29f5c"),
         .binaryTarget(name: "TBB", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240420125919/TBB.xcframework.zip", checksum: "50f6355ff72d9728dc6e12e4fc8c987d189befe42b617ffb714b9dc341976b2d"),
         .binaryTarget(name: "IrrXML", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/0.0.20221129003814/IrrXML.xcframework.zip", checksum: "7e948d42956a3880e61fa0c98d121fa31fde6b729d3074d0516dd04154efbb11"),
         .target(
