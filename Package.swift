@@ -22,6 +22,7 @@ let package = Package(
                 "pybind.a",
                 "TBB",
                 "ZeroMQ",
+                "embree3",
             ]),
     ],
     dependencies: [
@@ -42,6 +43,7 @@ let package = Package(
         .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240422130123/pybind.a.xcframework.zip", checksum: "1174a1855e5d96a0ee845121a5db94f094acc8816fdf2b498dfd46318a9811b4"),
         .binaryTarget(name: "TBB", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240422130123/TBB.xcframework.zip", checksum: "bf277779cb349c277bdd9bde7284988661c845f91aa627bde8fb97e2203eed57"),
         .binaryTarget(name: "ZeroMQ", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240422130123/ZeroMQ.zip", checksum: "efbc1615a752ab285de3cf29cab6ff451e551116f410703955cf03e3bc7f21e1"),
+        .binaryTarget(name: "embree3", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240422130123/embree3.zip", checksum: "991499c34ec1ae332c1f054624975390301454a61f1171bea1334d1c9213e556"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -60,6 +62,7 @@ let package = Package(
                 "TBB",
                 "BLAS-LAPACK-AppStore-Workaround",
                 "ZeroMQ",
+                "embree3",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
