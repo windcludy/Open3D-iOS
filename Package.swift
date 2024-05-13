@@ -24,6 +24,7 @@ let package = Package(
                 "libvtksys",
                 "libvtkCommonSystem",
                 "libvtkCommonCore",
+                "libvtkCommonDataModel",
             ]),
     ],
     dependencies: [
@@ -46,6 +47,7 @@ let package = Package(
         .binaryTarget(name: "libvtksys", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_sys.zip", checksum: "2c18f90c6c71ed83f3d82ae9ce8fe55f69428f4dafb35bebf6e66309fa10adfe"),
         .binaryTarget(name: "libvtkCommonCore", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_core.zip", checksum: "fa2c1afa6960a68dec8ba33c409eeb9aee021311d8bb83d244243802bb587fe4"),
         .binaryTarget(name: "libvtkCommonSystem", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_sys.zip", checksum: "43d8eb1a079fec5c66b2075a5b4e338e8b8caef0d786a70ca041342f7fbe9122"),
+        .binaryTarget(name: "libvtkCommonDataModel", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_data.zip", checksum: "f7ade7d3d5368badac1dc3e5d7c812d636779d682e7dff1e93dcce0e86de1d29"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -66,6 +68,7 @@ let package = Package(
                 "libvtksys",
                 "libvtkCommonSystem",
                 "libvtkCommonCore",
+                "libvtkCommonDataModel",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
