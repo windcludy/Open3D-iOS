@@ -26,6 +26,8 @@ let package = Package(
                 "libvtkCommonCore",
                 "libvtkCommonDataModel",
                 "libvtkCommonTransforms",
+                "libvtkFiltersCore",
+                "libvtkCommonMath",
             ]),
     ],
     dependencies: [
@@ -50,6 +52,8 @@ let package = Package(
         .binaryTarget(name: "libvtkCommonSystem", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_sys.zip", checksum: "43d8eb1a079fec5c66b2075a5b4e338e8b8caef0d786a70ca041342f7fbe9122"),
         .binaryTarget(name: "libvtkCommonDataModel", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_data.zip", checksum: "f7ade7d3d5368badac1dc3e5d7c812d636779d682e7dff1e93dcce0e86de1d29"),
         .binaryTarget(name: "libvtkCommonTransforms", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_trans.zip", checksum: "5efdd5652b00b0e499b3b24a350aaec7ffbac2743c86c56bb3a829baa4d581f1"),
+        .binaryTarget(name: "libvtkFiltersCore", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_filte_core.zip", checksum: "1139817980003c91a116dccd4195c3ebf258396971af80728a306dc4b44805c0"),
+        .binaryTarget(name: "libvtkCommonMath", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_math.zip", checksum: "efce678b6e9210172bb5aec74eb79b5baa462830df04509a65606484d91e0317"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -72,6 +76,8 @@ let package = Package(
                 "libvtkCommonCore",
                 "libvtkCommonDataModel",
                 "libvtkCommonTransforms",
+                "libvtkFiltersCore",
+                "libvtkCommonMath",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
