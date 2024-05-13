@@ -22,6 +22,8 @@ let package = Package(
                 "pybind.a",
                 "TBB",
                 "libvtksys",
+                "libvtkCommonSystem",
+                "libvtkCommonCore",
             ]),
     ],
     dependencies: [
@@ -42,6 +44,8 @@ let package = Package(
         .binaryTarget(name: "pybind.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/pybind.a.xcframework.zip", checksum: "39dcdaa52f1f0085e47f90ecf61d354f01e86bb732b4decd6409c3624aac9f3a"),
         .binaryTarget(name: "TBB", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/TBB.xcframework.zip", checksum: "175964660763e7f49f37575a2865bde52ebfe3dc427f9e27d2c124acd940324c"),
         .binaryTarget(name: "libvtksys", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_sys.zip", checksum: "2c18f90c6c71ed83f3d82ae9ce8fe55f69428f4dafb35bebf6e66309fa10adfe"),
+        .binaryTarget(name: "libvtkCommonCore", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_core.zip", checksum: "fa2c1afa6960a68dec8ba33c409eeb9aee021311d8bb83d244243802bb587fe4"),
+        .binaryTarget(name: "libvtkCommonSystem", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_common_sys.zip", checksum: "43d8eb1a079fec5c66b2075a5b4e338e8b8caef0d786a70ca041342f7fbe9122"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -60,6 +64,8 @@ let package = Package(
                 "TBB",
                 "BLAS-LAPACK-AppStore-Workaround",
                 "libvtksys",
+                "libvtkCommonSystem",
+                "libvtkCommonCore",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
