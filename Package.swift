@@ -70,7 +70,7 @@ let package = Package(
         .binaryTarget(name: "libvtkFiltersModeling", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_filte_model.zip", checksum: "9ba176b399ba467956bfb2f69e63f460c8f6e803a9656df3703eaa5b66fe16be"),
         .binaryTarget(name: "libvtkFiltersSources", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_filte_src.zip", checksum: "0acad6b359896c11ad53dca71254861ee3412cd49d7e25d26b95748563a1ec72"),
         .binaryTarget(name: "libvtkfmt", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_fmt.zip", checksum: "be8b24951a2af530e5604dfa68dd2a4cfd829df9019e01de756f0cc779d97433"),
-        .binaryTarget(name: "libvtkkissfft", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_kiss_fft.zip", checksum: "ecec5ac3bc2f340b6705a41c579eb68f9219abf4f5d66aac1369150ddbf68604"),
+        .binaryTarget(name: "libvtkkissfft", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_kiss_fft.zip", checksum: "b3f31a4ddea0c991c1e89e9c1edf6ba01c28efaa3904cf5e947cc63f3d45f3f6"),
         .binaryTarget(name: "libvtkpugixml", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_plugin_xml.zip", checksum: "ba7ea81121ffc2b8597b4f0066c8cfe468595d00ead16730d1e8426bc468affc"),
         .binaryTarget(name: "libvtksys", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/VTK_sys.zip", checksum: "2c18f90c6c71ed83f3d82ae9ce8fe55f69428f4dafb35bebf6e66309fa10adfe"),
         .target(
