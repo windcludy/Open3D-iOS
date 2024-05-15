@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC6A5102BD38DB1007FD856 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1FC6A5122BD38E47007FD856 /* libOpen3D_3rdparty_zlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpen3D_3rdparty_zlib.a; path = ../../../tmp/Open3D/ios/install/lib/libOpen3D_3rdparty_zlib.a; sourceTree = "<group>"; };
 		4C888FCF25EDC879005BE18A /* fragment.ply */ = {isa = PBXFileReference; lastKnownFileType = file; path = fragment.ply; sourceTree = "<group>"; };
 		4CD3A24E25E8DD5C0013D42E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD3A25125E8DD5C0013D42E /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
@@ -39,11 +41,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FC6A50F2BD38DB1007FD856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC6A5122BD38E47007FD856 /* libOpen3D_3rdparty_zlib.a */,
+				1FC6A5102BD38DB1007FD856 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CD3A24525E8DD5C0013D42E = {
 			isa = PBXGroup;
 			children = (
 				4CD3A25025E8DD5C0013D42E /* Example */,
 				4CD3A24F25E8DD5C0013D42E /* Products */,
+				1FC6A50F2BD38DB1007FD856 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
