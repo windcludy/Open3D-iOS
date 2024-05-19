@@ -45,7 +45,8 @@ let package = Package(
         .package(url: "https://github.com/kewlbear/BLAS-LAPACK-AppStore-Workaround.git", .branch("main")),
     ],
     targets: [
-        .binaryTarget(name: "Assimp", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240519194238/Assimp.xcframework.zip", checksum: "265165f19c4b21e5d5e333703eff48b273333d8434ee912c608a662f89468bb3"),
+        .binaryTarget(name: "Assimp", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240512110206/Assimp.xcframework.zip", checksum: "03330437997a92863465effe5a2613699ae69cf04d0050495b991ca847cc6535"),
+        // .binaryTarget(name: "Assimp", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240519194238/Assimp.xcframework.zip", checksum: "265165f19c4b21e5d5e333703eff48b273333d8434ee912c608a662f89468bb3"),
         .binaryTarget(name: "JPEG", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240519194238/JPEG.xcframework.zip", checksum: "0028700c31164d3a50cabb10e63b17e59d8f357245eb2f66b29954afebd62f26"),
         .binaryTarget(name: "jsoncpp", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240519194238/jsoncpp.xcframework.zip", checksum: "7c0d3fa99b89ee006d5054090e55e00a1b45b4eb492e627b103e20081195d8f3"),
         .binaryTarget(name: "libOpen3D_3rdparty_liblzf.a", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240519194238/libOpen3D_3rdparty_liblzf.a.xcframework.zip", checksum: "7e2b1e39c8582e967b0b9d552f6d18c72bcd6570357250cc805c4ded9de782ff"),
