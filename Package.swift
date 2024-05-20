@@ -37,6 +37,7 @@ let package = Package(
                 // "libvtkkissfft",
                 "libvtkpugixml",
                 "libvtksys",
+                "libUVAtlas",
             ]),
     ],
     dependencies: [
@@ -73,6 +74,7 @@ let package = Package(
         // .binaryTarget(name: "libvtkkissfft", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240520184913/VTK_kiss_fft.xcframework.zip", checksum: "21135a3dce19db295abe4bdf9b55ab34a99bcfe590bfdd47cfe77dd2f97c8a91"),
         .binaryTarget(name: "libvtkpugixml", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240520184913/VTK_plugin_xml.xcframework.zip", checksum: "6be47a3ed3da10354f3a1e63061592a9b8543b23a312c57d4468dd0f79fd9e17"),
         .binaryTarget(name: "libvtksys", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240520184913/VTK_sys.xcframework.zip", checksum: "a6cd50c8d1a55fe26367988a709276fc425b743e5939d2d50f0eac0b65a9c920"),
+        .binaryTarget(name: "libUVAtlas", url: "https://github.com/windcludy/Open3D-iOS/releases/download/0.0.20240520184913/UVAtlas.xcframework.zip", checksum: "db2d4881a2f6ce43b80ec043f131f234dab12e1c5621b2aad1ad8d9507d070aa"),
         .target(
             name: "LinkOpen3D",
             dependencies: [
@@ -106,6 +108,7 @@ let package = Package(
                 // "libvtkkissfft",
                 "libvtkpugixml",
                 "libvtksys",
+                "libUVAtlas",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
